@@ -4,7 +4,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 
 async function bootstrap() {
   const options = {
-    origin: '*',
+    origin: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     preflightContinue: false,
     optionsSuccessStatus: 204,
@@ -20,7 +20,7 @@ async function bootstrap() {
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
-  app.enableCors(options);
-  await app.listen(3000);
+  app.enableCors();
+  await app.listen(3100);
 }
 bootstrap();
