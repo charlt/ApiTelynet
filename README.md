@@ -24,7 +24,7 @@
 
 ## Description
 
-Examen Bnext.
+Telynet Bnext.
 
 ## Installation
 
@@ -36,8 +36,8 @@ $ npm install
 
 ```bash
 # development
-step 1. docker-compose build
-step 2. docker-compose up 
+step 1. npm run start:dev
+
 ```
 
 ##Documentation
@@ -48,18 +48,12 @@ USERS
 
 - POST url/user/create
 - GET url/user/
-
-CONTACTS
-
-- POST url/contacts/create/:userId
-- PUT url/contacts/edit/:userId
-- GET URL/contacts/getContacts/:userId
-- GET url/contacts/commonContacts?userId1=602bd70bf08521004e66c8a1&userId2=602b442c36bd6e2024b3ad6a
-
+- PUT url/user/:UserId
+ - delete url/user/:userId
 
 Swagger: [url](http://localhost:3000/api/) http://localhost:3000/api/
 
-Postman: [url](https://documenter.getpostman.com/view/6539093/TWDTNzCD) https://documenter.getpostman.com/view/6539093/TWDTNzCD
+
 ## Stay in touch
 
 - Author - Charly Bernabe
